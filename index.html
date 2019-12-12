@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--
+        Significado palabras
+        Listening
+        Libro
+        Cultura General
+    -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title></title>
+</head>
+
+<body>
+    <h1></h1>
+
+    <div id="app" class="fluid-container text-center">
+        <div class="points" style="background:blue;">
+            Blue Team
+            <input v-model="bluePoints">
+        </div>
+        <div class="points" style="background:red;">
+            Red Team
+            <input v-model="redPoints">
+        </div>
+        <div class='container jeopardy'>
+            <div class="row titles">
+                <div class='col-sm-3'>A</div>
+                <div class='col-sm-3'>B</div>
+                <div class='col-sm-3'>C</div>
+                <div class='col-sm-3'>D</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3" ref="cardsq" v-on:click="showModal(q.id)" v-for="q in questions" v-bind:key="q.id">
+                    <div v-bind:class="voltear(q.answered)">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" :id="'data' + q.id" >
+                                <div class='valor'>{{ q.value }}</div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>?</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="qDiv" v-if="modal">
+                <div style="padding:100px;">
+                    <h1 style="font-weight: bolder;font-size:2.7em;margin-bottom:50px;">Question!</h1>
+                
+                    <div style="font-size:1.5em;" v-html="modalQuestion"></div>
+                    <div v-if="modalAudio" style="margin-top:50px">
+                        <audio style="transform:scale(1.5)" :src="'https://joaquinflamenco.mx/jeopardy/recursos/' + modalAudio" controls></audio>
+                    </div>
+                    <div style='position:absolute;bottom:0;left:0;right:0;text-align:center;'>
+                        <span style='font-size:2em;'>{{countDown}}</span><br>
+                        <button v-on:click="point('blue')">Blue</button>
+                        <button v-on:click="hideModal">Exit</button>
+                        <button v-on:click="point('red')">Red</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

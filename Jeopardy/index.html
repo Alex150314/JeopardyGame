@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeopardy SF</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="jeopardy.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 						crossorigin="anonymous"></script>
+    <script src="jeopardy.js"></script>
+</head>
+<body>
+	<div class="center-align">
+	<h1>Jeopardy</h1>
+	<a class="btn-floating btn-large red pulse"><i class="large material-icons">menu</i></a>
+
+	<div class="center-align centered-content">
+	<table class="responsive-table centered">
+        <thead>
+          <tr>
+              <th><span id="topic1">Topic1</span></th>
+              <th><span id="topic2">Topic2</span></th>
+              <th><span id="topic3">Topic3</span></th>
+              <th><span id="topic4">Topic4</span></th>
+              <th><span id="topic5">Topic5</span></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><a data-target="modal1" class="waves-effect waves-light btn-large pulse boldy green question" topic="1" question="1"><i class="material-icons left">attach_money</i>100</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy green question" topic="2" question="1"><i class="material-icons left">attach_money</i>100</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy green question" topic="3" question="1"><i class="material-icons left">attach_money</i>100</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy green question" topic="4" question="1"><i class="material-icons left">attach_money</i>100</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy green question" topic="5" question="1"><i class="material-icons left">attach_money</i>100</a></td>
+          </tr><tr>
+            <td><a class="waves-effect waves-light btn-large pulse boldy cyan question" topic="1" question="2"><i class="material-icons left">attach_money</i>200</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy cyan question" topic="2" question="2"><i class="material-icons left">attach_money</i>200</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy cyan question" topic="3" question="2"><i class="material-icons left">attach_money</i>200</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy cyan question" topic="4" question="2"><i class="material-icons left">attach_money</i>200</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy cyan question" topic="5" question="2"><i class="material-icons left">attach_money</i>200</a></td>
+          </tr><tr>
+            <td><a class="waves-effect waves-light btn-large pulse boldy red question" topic="1" question="3"><i class="material-icons left">attach_money</i>300</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy red question" topic="2" question="3"><i class="material-icons left">attach_money</i>300</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy red question" topic="3" question="3"><i class="material-icons left">attach_money</i>300</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy red question" topic="4" question="3"><i class="material-icons left">attach_money</i>300</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy red question" topic="5" question="3"><i class="material-icons left">attach_money</i>300</a></td>
+          </tr><tr>
+            <td><a class="waves-effect waves-light btn-large pulse boldy purple question" topic="1" question="4"><i class="material-icons left">attach_money</i>400</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy purple question" topic="2" question="4"><i class="material-icons left">attach_money</i>400</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy purple question" topic="3" question="4"><i class="material-icons left">attach_money</i>400</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy purple question" topic="4" question="4"><i class="material-icons left">attach_money</i>400</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy purple question" topic="5" question="4"><i class="material-icons left">attach_money</i>400</a></td>
+          </tr><tr>
+            <td><a class="waves-effect waves-light btn-large pulse boldy question" topic="1" question="5"><i class="material-icons left">attach_money</i>500</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy question" topic="2" question="5"><i class="material-icons left">attach_money</i>500</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy question" topic="3" question="5"><i class="material-icons left">attach_money</i>500</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy question" topic="4" question="5"><i class="material-icons left">attach_money</i>500</a></td>
+            <td><a class="waves-effect waves-light btn-large pulse boldy question" topic="5" question="5"><i class="material-icons left">attach_money</i>500</a></td>
+          </tr>
+         
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+</body>
+</html>

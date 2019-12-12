@@ -1,0 +1,22 @@
+var database = [
+    {id : 0, type : 'txt' , question : '<b>According to the book, the best way to learn is: __________________ </b>', value : 100 , answered: false, team: 'none' },
+    {id : 1, type : 'txt' , question : '<b>True or False?</b><br><br> Robert Martin Garrix  is author of the book <i>The Clean Coder</i>', value : 100 , answered: false, team: 'none' },
+    {id : 2, type : 'txt' , question : '<i>If your a professional, you must say <b>"no"</b> more often to your boss</i>.<br><br> <b>Is that correct? Why?</b>', value : 100 , answered: false, team: 'none' },
+    {id : 3, type : 'txt' , question : '<quote>We’ve all heard how important it is to be a “team player".</quote> <br><br> What does being a <b>team player</b> mean? ', value : 100 , answered: false, team: 'none' },
+    {id : 4, type : 'txt' , question : '<b>True or False?</b><br><br> Do or do not. There is always a try', value : 200 , answered: false, team: 'none' },
+    {id : 5, type : 'mp3', audio: 'audio1.mpeg' , question : '<b>Listen the next audio, then answer true or false.', value : 200 , answered: false, team: 'none' },
+    {id : 6, type : 'txt' , question : '<b>¿True or False?</b><br><span style="font-size:.8em;">Uncle Bobo advices: <i>learn things that are outside your comfort zone. If you are a .NET programmer, learn Java. If you are a Java programmer, learn Ruby. If you are a C programmer, learn Lisp.</i></span><br> <b>Explain your answer</b>', value : 200 , answered: false, team: 'none' },
+    {id : 7, type : 'txt' , question : '<b>What is a "bug" in software development?</b>', value : 200 , answered: false, team: 'none' },
+    {id : 8, type : 'txt' , question : 'Explain the next sentence:<br><br>I’ve been <b>lauded</b>.', value : 300 , answered: false, team: 'none' },
+    {id : 9, type : 'txt' , question : 'Talk about yourself for a minute.', value : 300 , answered: false, team: 'none' },
+    {id : 10, type : 'txt' , question : '<b>Enlightening</b> means: <br><br>- Fantasize about a subject or situation<br>- Have greater knowledge and understanding about a subject or situation.<br>- The fact or condition of being illuminated.', value : 300 , answered: false, team: 'none' },
+    {id : 11, type : 'txt' , question : '<b>"Professionals speak truth to power</b>" means<br><br>- Professionals are brave and powerful.<br>- Professionals have the knowledge to resolve big problems<br>- Professionals have the courage to say no to their managers', value : 300 , answered: false, team: 'none' },
+    {id : 12, type : 'txt' , question : 'Explain the next sentence:<br><br><b><i>It was his way or the highway</i></b>', value : 400 , answered: false, team: 'none' },
+    {id : 13, type : 'mp3' , audio: 'audio2.mpeg', question : 'Listen the audio. Then answer true or false and explain why.', value : 400 , answered: false, team: 'none' },
+    {id : 14, type : 'txt' , question : 'What does it mean <b>untrustworthy</b> in the next sentence? <br><br><i>I’ve worked with untrustworthy paycheck thieves, and I’ve worked with consummate professionals</i>', value : 400 , answered: false, team: 'none' },
+    {id : 15, type : 'txt' , question : 'What does <b>Enticement</b> mean?<br><br>Hint: <i>College was not an option for me, nor did it hold any particular enticements.</i>', value : 400 , answered: false, team: 'none' },
+    {id : 16, type : 'txt' , question : 'Explain the next sentence:<br><br>I’ve worked with brilliant programmers and I’ve worked with <b>slugs</b>.', value : 500 , answered: false, team: 'none' },
+    {id : 17, type : 'txt' , question : 'What is the most valuable thing you\'ve learned so far from <b>The Clean Coder</b>?<br><br>Talk about it for a minute', value : 500 , answered: false, team: 'none' },
+    {id : 18, type : 'txt' , question : 'TRUE OR FALSE<br><br><b><i>He was one of those loud, in-your-face kind of managers</i></b><br><br>That means he was demanding but fair. (Explain your answer).', value : 500 , answered: false, team: 'none' },
+    {id : 19, type : 'mp3' , audio: 'audio3.mpeg', question : 'Listen the next audio and talk about it for a minute:', value : 500 , answered: false, team: 'none' }
+];
